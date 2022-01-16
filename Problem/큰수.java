@@ -3,7 +3,7 @@ package Problem;
 import java.util.Scanner;
 import java.math.BigInteger;
 // BigInteger 안쓰는 알고리즘 구현
-
+// 백준
 public class 큰수 {
     public static void main(String[] args)
     {
@@ -38,7 +38,7 @@ public class 큰수 {
 
         StringBuilder sb= new StringBuilder();
         // 가장 큰 자릿수가 0이 아니면, 해당 숫자를 추가해야 정상적인 숫자가 완성됨
-        // 이 과정이 꼭 필요함-> 아니면 맨 앞자릿수가 0인 경우도 있음(숫자가 0으로 시작)
+        // *** 이 과정이 꼭 필요함-> 아니면 맨 앞자릿수가 0인 경우도 있음(숫자가 0으로 시작)
         if(Aa[max_length]!=0)
             sb.append(Aa[max_length]);
 
@@ -48,7 +48,7 @@ public class 큰수 {
         }
         System.out.println(sb);
     }
-    // BigInteger 클래스 사용
+    // BigInteger 클래스 사용법
     /*public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);

@@ -1,5 +1,6 @@
 package Problem;
 import java.util.ArrayList;
+// ************* Map공부해서 다시 도전
 public class 신고결과 {
     class Solution {
         public int[] solution(String[] id_list, String[] report, int k)

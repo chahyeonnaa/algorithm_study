@@ -1,4 +1,4 @@
-package Problem;
+package algorithm_study.Problem;
 
 import java.util.Scanner;
 // 1호라인부터 차례대로 배정

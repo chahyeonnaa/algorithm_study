@@ -41,12 +41,29 @@ public class 수정렬하기2 {
 /*        int N=Integer.parseInt(sc.readLine());
         ArrayList<Integer> list = new ArrayList<>();
 
+        for(int i=0;i<N;i++)
+        {
+            // 입력된 정수를 인덱스로 하여 그칸만 true로 바꿔주기 -> 이게 카운팅정렬
+            arr[Integer.parseInt(sc.readLine())+1000000]=true;
+        }
+
+        for(int i=0;i<arr.length;i++)
+        {
+            // 트루인것만 검사_ 배열 인덱스를 앞에서 부터 차례대로 돌기때문에 인덱스를 추가해주면 끝
+            if(arr[i]==true)
+            {
+                st.append(i-1000000).append("\n");
+            }
+        }
+        System.out.println(st);
+
+        // 1. Collections.sort 이용
+/*        int N=Integer.parseInt(sc.readLine());
+        ArrayList<Integer> list = new ArrayList<>();
         for(int i = 0; i < N; i++) {
             list.add(Integer.parseInt(sc.readLine()));
         }
-
         Collections.sort(list);
-
         for(int value : list) {
             st.append(value).append('\n');
         }
@@ -56,17 +73,13 @@ public class 수정렬하기2 {
 
         // Arrays.sort 쓰면 시간초과남
   /*      BufferedReader sc=new BufferedReader(new InputStreamReader(System.in));
-
         int N=Integer.parseInt(sc.readLine());
         int arr[]=new int[N];
-
         for(int i=0;i<N;i++)
         {
             arr[i]=Integer.parseInt(sc.readLine());
         }
-
         Arrays.sort(arr);
-
         for(int j=0;j<N;j++) {
             System.out.println(arr[j]);
         }

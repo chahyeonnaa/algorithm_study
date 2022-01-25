@@ -1,4 +1,4 @@
-package Problem;
+package algorithm_study.Problem;
 
 import java.util.Scanner;
 // 선택정렬과 삽입정렬을 이용하여 정렬하기

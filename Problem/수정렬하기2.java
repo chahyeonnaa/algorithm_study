@@ -57,19 +57,6 @@ public class 수정렬하기2 {
         }
         System.out.println(st);
 
-        // 1. Collections.sort 이용
-/*        int N=Integer.parseInt(sc.readLine());
-        ArrayList<Integer> list = new ArrayList<>();
-        for(int i = 0; i < N; i++) {
-            list.add(Integer.parseInt(sc.readLine()));
-        }
-        Collections.sort(list);
-        for(int value : list) {
-            st.append(value).append('\n');
-        }
-        System.out.println(st);*/
-
-
 
         // Arrays.sort 쓰면 시간초과남
   /*      BufferedReader sc=new BufferedReader(new InputStreamReader(System.in));

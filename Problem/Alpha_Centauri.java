@@ -1,4 +1,4 @@
-package Problem;
+package algorithm_study.Problem;
 
 import java.util.Scanner;
 // 거리 차 구하기_ 어떤 거리 루트로 갈 수 있는지 규칙찾기

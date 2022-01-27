@@ -17,7 +17,7 @@ public class 에라토스테네스의체
         int N=Integer.parseInt(st.nextToken());
 
         make_prime(N);
-        for(int i=M;i<N;i++)
+        for(int i=M;i<=N;i++)
         {
             if(prime[i]==false)
                 System.out.println(i);

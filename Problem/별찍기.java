@@ -1,7 +1,9 @@
-package Problem;
+package algorithm_study.Problem;
 
-// 모르겠다
-// 풀이를 봐도 이해가 안된다......... 다시해야겠따
+// N=9일때를 예로 설명_arr[9][9]로 모양 만들기
+// 처음호출은(0,0,9,false)로 시작 -> size=3, (i=0;i<0+9;i+=3) (j=0;j<0+9;j+=3)가 큰틀로 잡힙 -> 총 반복 횟수 9번
+// i=3, j=3일때 count=5이고, arr[3][3]~[5][5]까지 총 9칸이 가운데 빈칸으로 들어감.
+// 나머지는 각 단계의 재귀를 통해 N=3일때의 작은 삼각형을 그림.
 import java.util.Scanner;
 
 public class 별찍기 {

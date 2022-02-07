@@ -17,13 +17,12 @@ public class 이천십육년 {
         // count 1로 시작
         while(true)
         {
-            count++;
             // 다시 금요일로 초기화
             if(count==7)
             {
                 count=0;
             }
-
+            count++;
             // 입력받은 숫자와 일치하면 종료
             if(M==a && Y==b)
             {

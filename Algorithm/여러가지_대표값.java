@@ -13,7 +13,7 @@ public class 여러가지_대표값 {
         int N = Integer.parseInt(br.readLine());
 
         // 입력값의 범위 : -4000 ~ 4000
-        int[] arr = new int[8001];
+        int [] arr= new int[8001];
 
         /*
          *  sum = 총 합계
@@ -51,8 +51,10 @@ public class 여러가지_대표값 {
         // 이전의 동일한 최빈값이 1번만 등장했을경우 true, 아닐경우 false
         boolean flag = false;
 
+        // 최솟값, 최댓값 사이로만 돌리면 됨
         for(int i = min + 4000; i <= max + 4000; i++) {
 
+            // 한번이라도 나온적 있으면,
             if(arr[i] > 0) {
 
                 /*
@@ -62,7 +64,7 @@ public class 여러가지_대표값 {
                 // 숫자의 개수가 총 5개라면, 3번째에 있는 수가 중앙값
                 // 0일때 기록, 1일때 기록, 2일때 기록 -> 최종 중앙값
                 if(count < (N + 1) / 2) {
-                    count += arr[i];	// i값의 빈도수를 count 에 누적
+                    count += arr[i];	// i값의 빈도수를 count 에 누적(몇번째인지 기록)
                     median = i - 4000;
                 }
 

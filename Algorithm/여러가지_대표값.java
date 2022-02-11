@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// 카운팅 정렬으로 평균, 중앙값, 최빈값, 범위를 구해보자
+// 카운팅 정렬으로 평균, 중앙값, 최빈값, 범위를 구해보자.!
 // 카운팅 정렬을 써야 가장 빠르고 효율적인 알고리즘이 완성됨
 public class 여러가지_대표값 {
     public static void main(String[] args) throws IOException {

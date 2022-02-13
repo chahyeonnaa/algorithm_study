@@ -8,7 +8,7 @@ public class 실패율 {
         int answer[]=new int[N];
         double result[]=new double[N+2];
         boolean t_answer[]=new boolean[N+2];
-
+        t_answer[N+1]=true;
         for(int i=0;i<stages.length;i++)
         {
             if(t_answer[stages[i]]==true)
@@ -21,26 +21,20 @@ public class 실패율 {
                 if(stages[i]<=stages[j])
                     count1++;
 
-                if(stages[i]==N+1)
-                    count2=0;
-                else if(stages[i]==stages[j])
+                if(stages[i]==stages[j])
                     count2++;
+
             }
             t_answer[stages[i]]=true;
-            if(stages[i]==N+1)
-            {
-                result[stages[i]-1]=(double)count2/(double)count1;
-            }
-            else
-                result[stages[i]]=(double)count2/(double)count1;
+            result[stages[i]]=(double)count2/(double)count1;
         }
 
         // 최댓값 찾아서 그때의 인덱스를 answer배열에 넣어주기
 
-        int maxIndex = 0;
         // 최대값, 최대값의 인덱스 구하기
         for(int j=0;j<N;j++)
         {
+            int maxIndex = 0;
             double max = -1;
             for (int i = 1; i < result.length; i++)
             {

@@ -91,8 +91,8 @@ public class 나이순정렬 {
         System.out.println(sb);
 
     }*/
+    }
 }
-
 /*class Person
 {
     int age;

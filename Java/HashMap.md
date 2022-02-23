@@ -61,6 +61,6 @@ HashMap 값 검색
 ```
 System.out.println(map.containsKey("A")); // 키가 있으면 true, 없으면 false를 반환
 
-System.out.println(hashMap.containsValue("BANANA")); // value 값 검색
+System.out.println(hashMap.containsValue("BANANA")); // value 값 검색:paw_prints:
 System.out.println(hashMap.containsValue("E????"));
 ```

@@ -38,7 +38,6 @@ public class N과M_3 {
         {
             arr[depth]=i+1;
             dfs(N,M,depth+1);
-
         }
 
     }

@@ -1,9 +1,11 @@
 package algorithm_study.Problem;
 
+import java.util.ArrayList;
+
 public class 신규_아이디_추천 {
     public String solution(String new_id) {
         String answer = "";
-        ArrayList <Character> arr=new ArrayList<Character>();
+        ArrayList<Character> arr=new ArrayList<Character>();
         for(int i=0;i<new_id.length();i++)
         {
             // 소문자로 치환, 쓸데없는거 제거(1,2)
